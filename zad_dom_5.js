@@ -16,10 +16,13 @@ function DayOfWeek() {
 function Month()
 {
 	var currentDate = new Date();
-  var month = ["stycznia","lutego", "marca", "kwietnia", "maja", "czerwca", "licpa", "sierpnia", "września", "października", "listopada", "grudnia"];
-  if(currentDate.getMonth() <= 11){
+  var month = ["stycznia","lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia"];
+  var month1 = ["styczen","luty", "marzec", "kwiecien", "maj", "czerwiec", "lipiec", "sierpień", "wrzesień", "październik", "listopad", "grudzień"];
+  if(currentDate.getDate() <= 11){
   	return month[currentDate.getMonth()];
-  }  
+  }else {
+  	return month1[currentDate.getMonth()];
+  }
 }
 
 var d = new Date();
