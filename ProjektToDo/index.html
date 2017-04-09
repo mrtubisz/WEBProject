@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8" />
+	<title>MyProjectSC</title>
+	<link rel="stylesheet"  href="style.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<script type="text/javascript" src="date.js">	</script>
+	
+</head>
+
+<!-- funkcja onload do pokazywania daty -->
+<body onload="odliczanie();"> 
+		
+	<div id="container">
+	
+		<div id="title">
+			<h1>Osobisty organizer</h1>	
+		</div>
+		
+		<!-- pasek zadań (prototyp) -->	
+		<div id="navigate">			
+			<div id="date"></div> 
+		</div>
+		
+		<div id="main">
+		
+			<!-- pole do dodawania zadań -->
+			<center>		
+				<input type="text" value="treść zadania..." id="text">
+				<input type="submit" name="send" value="Dodaj zadanie" class="button"/>
+			</center>
+			
+				<!-- treść zadań -->
+				<p>1. Odrobić zadanie z JS.<input type="checkbox" name="service" style="margin-left:30px;" value="spotify"/><input type="submit" style="margin-left:10px;" name="send" value="Usuń" /></p>
+				<br />
+				<p>2. Wyrzucić śmieci.<input type="checkbox" name="service" style="margin-left:30px;" value="spotify"/><input type="submit" style="margin-left:10px;" name="send" value="Usuń" /></p>
+				
+		</div>
+		
+		<footer id="footer">
+		Osobisty organizer. &copy; Wszelkie prawa zastrzeżone.
+		</footer>
+		
+	</div>
+	
+</body>
+</html>
