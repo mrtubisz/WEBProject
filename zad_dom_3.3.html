@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+
+function znajdz()
+{
+	var Table = new Array(10);
+	for(var i =0 ; i<10 ; i++)
+	{
+		Table[i] = i+1;
+	}
+	
+	var x = 7;
+	var pomoc = false;
+	var pomoc1 = true;
+	
+	for(var i=0; i<Table.length ; i++)
+	{
+		if((Table[i] == x) && (pomoc1 == true))
+		{
+			console.log("pierwszy element to numer w tablicy"+ i );
+			pomoc = true;
+			pomoc1 = false;
+		}
+		
+	}
+	if(pomoc==false)
+		{
+			console.log("nie ma takiego elementu w tablicy");
+		}
+
+}
+
+
+
+
+</script>
+<title>wyszukiwanie</title>
+</head>
+<body>
+<script>znajdz();</script>
+ 
+</body>
+</html>
