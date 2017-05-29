@@ -28,12 +28,12 @@
 		
 			<!-- pole do dodawania zadań -->
 			<center>		
-				<input type="text" value="treść zadania..." id="text">
-				<input type="submit" name="send" value="Dodaj zadanie" class="button"/>
+				<input type="text" value="treść zadania..." id="task">
+				<input type="submit" name="send" value="Dodaj zadanie" class="button" id="buttask"/>
 			</center>
 			
 				<!-- treść zadań -->
-				<p>1. Odrobić zadanie z JS.<input type="checkbox" name="service" style="margin-left:30px;" value="spotify"/><input type="submit" style="margin-left:10px;" name="send" value="Usuń" /></p>
+				<p id="list"><span id="xid">Nie ma żadnych zadań</span></p>
 				<br />
 				<p>2. Wyrzucić śmieci.<input type="checkbox" name="service" style="margin-left:30px;" value="spotify"/><input type="submit" style="margin-left:10px;" name="send" value="Usuń" /></p>
 				
@@ -44,6 +44,6 @@
 		</footer>
 		
 	</div>
-	
+	<script src="tasks.js"></script>
 </body>
 </html>
